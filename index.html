@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">☺</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hallooo,<br>Saya <span>Muhamad Addin al-Haadi</span></h2>
+            <p>Saya adalah seorang mahasiswa dari kampus Telkom University jurusan S1 Teknik Komputer di
+                Fakultas
+                Teknik Elektro.</p>
+            <a href="about.html">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/addin.alhadi"><img src="assets/facebook.png"></a></li>
+            <li><a href="https://twitter.com/AddinHaadi"><img src="assets/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/addin_alhaadi/?hl=id"><img src="assets/ig.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+
+</body>
+
+</html>
